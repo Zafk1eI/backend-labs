@@ -1,8 +1,8 @@
 from uuid import UUID, uuid4
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-from src.example_fastapi.database.models.user import User
-from src.example_fastapi.schemas.user import UserCreate, UserUpdate
+from example_fastapi.database.models.user import User
+from example_fastapi.schemas.user import UserCreate, UserUpdate
 import logging
 
 logger = logging.getLogger(__name__)
