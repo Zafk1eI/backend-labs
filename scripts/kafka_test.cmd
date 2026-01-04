@@ -1,0 +1,1 @@
+docker exec -it broker /opt/kafka/bin/kafka-producer-perf-test.sh --topic test --num-records 50000000 --record-size 100 --throughput -1 --producer-props acks=1 bootstrap.servers=broker:9092 buffer.memory=67108864 batch.size=8196
