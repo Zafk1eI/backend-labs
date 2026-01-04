@@ -5,7 +5,7 @@ from example_fastapi.dependencies.services import get_users_service_faststream
 from example_fastapi.schemas.user import UserCreate
 from example_fastapi.services.user_service import UserService
 
-broker = KafkaBroker("localhost:9092")
+broker = KafkaBroker("broker:29092")
 kafka_app = FastStream(broker)
 
 
