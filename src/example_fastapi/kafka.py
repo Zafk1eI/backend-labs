@@ -4,8 +4,14 @@ from faststream.kafka import KafkaBroker
 from example_fastapi.dependencies.services import get_users_service_faststream
 from example_fastapi.schemas.user import UserCreate
 from example_fastapi.services.user_service import UserService
+import os
+from dotenv import load_dotenv
 
-broker = KafkaBroker("broker:29092")
+load_dotenv()
+
+kafka_url = os.getenv("KAFKA_URL", "localhost:9092")
+
+broker = KafkaBroker(kafka_url)
 kafka_app = FastStream(broker)
 
 

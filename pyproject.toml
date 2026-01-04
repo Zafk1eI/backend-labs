@@ -16,6 +16,7 @@ dependencies = [
     "sqlalchemy[asyncio]>=2.0.44",
     "uvicorn>=0.38.0",
     "faststream[kafka]>=0.5.19",
+    "python-dotenv>=1.2.1",
 ]
 
 [project.scripts]
